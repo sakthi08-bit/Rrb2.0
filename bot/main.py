@@ -34,11 +34,11 @@ BOT_TOKEN = "8640224009:AAGr1DPdJVLnsLK5hLNsNKlzF8AdEyzxgbc"   # Replace with yo
 # Format: "YYYY-MM-DD" for released results, None if not yet released
 EXAMS = {
     "ssc_mts": {
-        "name": "SSC MTS 2024",
+        "name": "SSC MTS 2026",
         "full_name": "SSC Multi-Tasking Staff (MTS) & Havaldar 2024",
         "icon": "📋",
         "status": "released",
-        "result_date": "2025-03-12",   # Final result declared date
+        "result_date": "none",   # Final result declared date
         "result_link": "https://ssc.gov.in/",
         "description": (
             "SSC MTS & Havaldar 2024 Final Result has been declared. "
@@ -51,10 +51,10 @@ EXAMS = {
             "3. Find 'SSC MTS & Havaldar 2024 Final Result'\n"
             "4. Download the PDF and use Ctrl+F to search your roll number"
         ),
-        "google_search": "https://www.google.com/search?q=SSC+MTS+2024+Final+Result+latest+update",
+        "google_search": "https://www.google.com/search?q=SSC+MTS+2026+Final+Result+latest+update",
     },
     "rrb_ntpc": {
-        "name": "RRB NTPC Graduate 2024",
+        "name": "RRB NTPC Graduate 2026",
         "full_name": "RRB NTPC Graduate Level CEN 05/2024 (8113 Posts)",
         "icon": "🚂",
         "status": "released",
@@ -75,7 +75,7 @@ EXAMS = {
         "google_search": "https://www.google.com/search?q=RRB+NTPC+Graduate+CEN+05+2024+Final+Result+latest",
     },
     "rrb_groupd": {
-        "name": "RRB Group D 2025",
+        "name": "RRB Group D 2026",
         "full_name": "RRB Group D CEN 08/2024 (32,438 Posts)",
         "icon": "🛤️",
         "status": "awaited",
@@ -187,6 +187,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         f"  📋 SSC MTS\n"
         f"  🚂 RRB NTPC\n"
         f"  🛤️ RRB Group D\n"
+        f" Powered BY: Sakthi Kumaran☄️\n"
         f"{alert_text}\n\n"
         f"*Select an exam below to check its result status:*"
     )
@@ -251,7 +252,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 # async def daily_check(context: ContextTypes.DEFAULT_TYPE) -> None:
 #     alerts = check_today_alerts()
 #     if alerts:
-#         CHAT_ID = YOUR_CHAT_ID   # Replace with your chat/group ID
+#         CHAT_ID = 8640224009 # Replace with your chat/group ID
 #         msg = "🚨 *RESULT ALERT!*\n\nResult declared today for:\n" + \
 #               "\n".join(f"  • {name}" for name in alerts)
 #         await context.bot.send_message(chat_id=CHAT_ID, text=msg, parse_mode="Markdown")
