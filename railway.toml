@@ -1,0 +1,2 @@
+[deploy]
+startCommand = "python exam_result_bot.py"
