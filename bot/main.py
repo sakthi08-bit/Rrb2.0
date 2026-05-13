@@ -11,7 +11,7 @@ from telegram.ext import (
 import requests
 from bs4 import BeautifulSoup
 
-BOT_TOKEN = "AAGr1DPdJVLnsLK5hLNsNKlzF8AdEyzxgbc"
+BOT_TOKEN = "8640224009:AAGr1DPdJVLnsLK5hLNsNKlzF8AdEyzxgbc"
 CHAT_ID = "8640224009"  # Replace with your chat/group ID to receive alerts
 GOOGLE_API_KEY = "8bf6d1dea7604b57c68fa6c8b4bd8991785c582f2190f77f20fb758268c2428e"
 
